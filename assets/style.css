@@ -68,7 +68,7 @@
 
 
 .box{
-    background-color: rgb(1, 0, 8);
+    /* background-color: rgb(1, 0, 8); */
     float: left;
     width: calc(100% / 3 - 30px);
 }
@@ -79,14 +79,13 @@
 }
 
 .brand{
-    color: white;
-    font-family: 'Tilt Warp', cursive;
+    color: black;
     position: relative;
 }
 
 .type{
-    color: white;
-    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     
 }
 
@@ -100,4 +99,40 @@
     content: "";
     clear: both;
     display: block;
+}
+
+/* Nav bot */
+
+.container-navbot{
+    max-width: 1000px;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+.navbar-bot{
+    height: 4rem;
+    background-color: black;
+    margin-top: 40px;
+}
+
+.navbar-bot .container-navbot{
+    display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	height: 100%;
+}
+
+.navbar-bot .container-navbot > * {
+	display: flex;
+	align-items: center;
+}
+
+.info-boolean-bot{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.small-logo-bot{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
