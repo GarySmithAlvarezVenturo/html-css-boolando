@@ -53,31 +53,56 @@
 
 /* main */
 
-main section {
-	padding-top: 3rem;
-	padding-bottom: 3rem;
-    background-color: lightgray; 
-}
 
-.section-feature .container {
-	display: flex;
-}
-
-.img-container{
+.container-main{
+    max-width: 1000px;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    margin-top: 20px;
     display: flex;
-	align-items: center;
+}
+
+
+
+.box-member{
+    background-color: rgb(1, 0, 8);
+    float: left;
+    width: calc(100% / 3 - 30px);
+}
+
+/* .member-image{
+    float: left;
+    width: 100px;
+    margin-right: 1rem;
+    width: 100px;
+    height: 103px;
+} */
+
+.photo{
+   width: 100%;
+   height: 100%;
+}
+
+.name-member{
+    color: white;
+    font-family: 'Tilt Warp', cursive;
+    position: relative;
+}
+
+.work-member{
+    color: white;
+    font-family: 'Poppins', sans-serif;
     
 }
-.photo{
-    height: 20%;
+
+address{
+    color: red;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
 }
 
-
-
-
-
-
-
-
-
-
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
