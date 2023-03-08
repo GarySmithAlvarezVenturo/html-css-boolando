@@ -51,6 +51,29 @@
 	height: 100%;
 }
 
+/* main */
+
+main section {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+    background-color: lightgray; 
+}
+
+.section-feature .container {
+	display: flex;
+}
+
+.img-container{
+    display: flex;
+	align-items: center;
+    
+}
+.photo{
+    height: 20%;
+}
+
+
+
 
 
 
