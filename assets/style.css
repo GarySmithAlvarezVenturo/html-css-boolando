@@ -1,0 +1,60 @@
+/* reset */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* general style */
+
+.container{
+    max-width: 1000px;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+/* header */
+
+.navbar{
+    height: 4rem;
+    background-color: rgb(235, 116, 5);
+}
+
+.navbar .container{
+    display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	height: 100%;
+}
+
+.navbar .container > * {
+	display: flex;
+	align-items: center;
+}
+
+.menu{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.navbar .logo-item {
+	display: flex;
+	align-items: center; 
+}
+
+
+.navbar .logo-item a {
+	height: 50%;
+}
+
+.navbar .logo-item img {
+	height: 100%;
+}
+
+
+
+
+
+
+
+
