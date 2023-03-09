@@ -1,4 +1,4 @@
-/* reset */
+/* Settings */
 
 * {
 	margin: 0;
@@ -27,7 +27,7 @@ body
     padding-inline: 1rem;
 }
 
-/* navbar */
+/* navbar top */
 
 nav{
     position: fixed;
@@ -74,6 +74,10 @@ nav a{
     color: white;
 }
 
+/* End-navbar top */
+
+
+/* Main-cards */
 main{
     padding-top: 2rem;
     padding-bottom: 2rem;
