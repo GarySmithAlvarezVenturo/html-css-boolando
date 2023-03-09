@@ -6,7 +6,20 @@
 	box-sizing: border-box;
 }
 
-/* general style */
+:root{
+    --bg-nav: orange;
+    --bg-footer: black;
+    --font-size: 14px;
+    --height-navbar: 3rem;
+}
+
+html{
+    font-family: sans-serif;
+    font-size: var(--font-size);
+    margin-top: var(--height-navbar)
+}
+
+body
 
 .container{
     max-width: 1000px;
@@ -14,125 +27,123 @@
     padding-inline: 1rem;
 }
 
-/* header */
+/* navbar */
 
-.navbar{
-    height: 4rem;
-    background-color: rgb(235, 116, 5);
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-nav);
+    height: var(--height-navbar);
+    z-index: 99;
 }
 
-.navbar .container{
+nav .container{
     display: flex;
-	justify-content: space-between;
-	align-items: stretch;
-	height: 100%;
+    justify-content: space-between;
+    height: 100%;
 }
 
-.navbar .container > * {
-	display: flex;
-	align-items: center;
+nav ul{
+    list-style: none;
 }
 
-.menu{
+nav .logo{
+    display: flex; 
+    align-items: center;
+}
+
+nav .logo img{
+    height: 70%;
+}
+
+nav .categories-menu
+nav .user-menu{
+    display: flex;
+    gap: 1rem;
+}
+
+
+nav li{
+    display: flex;
+    align-items: center;
+}
+
+nav a{
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-.navbar .logo-item {
-	display: flex;
-	align-items: center; 
 }
 
-
-.navbar .logo-item a {
-	height: 50%;
+main{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
-.navbar .logo-item img {
-	height: 100%;
-}
-
-/* main */
-
-
-.container-main{
-    max-width: 1000px;
-    margin-inline: auto;
-    padding-inline: 1rem;
-    margin-top: 20px;
+main .container{
     display: flex;
     flex-wrap: wrap;
-    gap: 40px 45px;
-    justify-content: center;
+
 }
 
+.card{
+    flex:0 0 calc(100% / 3);
+    padding: 1rem .5rem;
+    border: 3px solid red;
 
-
-.box{
-    /* background-color: rgb(1, 0, 8); */
-    float: left;
-    width: calc(100% / 3 - 30px);
 }
 
-.photo{
-   width: 100%;
-   height: 100%;
+.card img{
+    width: 100%;
 }
 
-.brand{
-    color: black;
+.card .image-container{
     position: relative;
 }
 
-.type{
-    color: black;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    
-}
-
-.price{
-    color: red;
-    font-family: 'Poppins', sans-serif;
-    position: relative;
-}
-
-.clearfix::after{
-    content: "";
-    clear: both;
-    display: block;
-}
-
-/* Nav bot */
-
-.container-navbot{
-    max-width: 1000px;
-    margin-inline: auto;
-    padding-inline: 1rem;
-}
-
-.navbar-bot{
-    height: 4rem;
-    background-color: black;
-    margin-top: 40px;
-}
-
-.navbar-bot .container-navbot{
+.card .heart{
+    position: absolute;
     display: flex;
-	justify-content: space-between;
-	align-items: stretch;
-	height: 100%;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    right: 0;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    background-color: white;
 }
 
-.navbar-bot .container-navbot > * {
-	display: flex;
-	align-items: center;
+.card .heart:hover{
+    color: red;
+    cursor: pointer;
 }
 
-.info-boolean-bot{
+.card .tags{
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.card .tag{
+    display: inline-block;
+    padding: .5em .7em;
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
 }
 
-.small-logo-bot{
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.card .tag-red{
+    background-color: red;
 }
+
+.card .tag-green{
+    background-color: green;
+}
+
+
+/* footer */
+
+footer{
+    background-color: var(--bg-footer)
+}
+
+

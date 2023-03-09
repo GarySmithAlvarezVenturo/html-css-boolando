@@ -5,106 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Boolando</title>
 </head>
 <body>
-    
-    <!-- Nav top -->
     <header>
-        <nav class="navbar">
-			<div class="container">
-				<div class="menu">Donna Uomo Bambini</div>
-                <div class="logo-item">   
-                    <a href="#">
-                        <img id="logo" src="img/boolean-logo.png" alt="Boolean">
-                    </a>
-                </div>	
-				<div class="small-logo">Piccoli Loghi</div>
-			</div>
-		</nav>
+        
+        <!-- Nav Top -->
+
+        <nav>
+            <class class="container">
+                <ul class="categories-menu">
+                    <li><a href="">Donna</a></li>
+                    <li><a href="">Uomo</a></li>
+                    <li><a href="">Bambino</a></li>
+                </ul>
+        
+                <a href="#" class="logo"><img src="img/boolean-logo.png" alt="Logo Boolean"></a>
+    
+                <ul class="user-menu">
+                    <li>
+                        <a href="#"><i class="fa-regular fa-user"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-bag-shopping"></i></a>
+                    </li>
+                </ul>
+            </class>
+        </nav>
 	</header>
 
-    <!-- Photo and info -->
+    <!-- All cards -->
+
     <main>
-        <div class="container-main">
-            <div class="box clearfix">
-                <div class="photo-member1">
-                    <img src="img/1.webp" alt="" class="photo">
+        <div class="container">
+            <div class="card">
+                <div class="image-container">
+                    <img src="img/1.webp" alt="">
+                    <div class="heart">&hearts;</div>
+                    <div class="tags">
+                        <div class="tag tag-red">-50%</div>
+                        <div class="tag tag-green">Sostenibilità</div>
+                    </div>
+                    
                 </div>
-                <div class="info">
+
+                <div class="contets">
                     <div class="brand">Levi's</div>
-                    <div class="type">RELAXED FIT TEE UNISEX</div>
-                    <div class="price">14,99 &euro;</div class="price">
+                    <div class="title">Relaxed fit tee unisex</div>
+                    <span class="price price-new">14.99 Euro</span>
+                    <span class="price price-old">29.99 Euro</span>
                 </div>
             </div>
 
-            <div class="box clearfix">
-                <div class="photo-member2">
-                    <img src="img/2.webp" alt="" class="photo">
-                </div>
-                <div class="member-info">
-                    <div class="brand">Guess</div>
-                    <div class="type">ROSES TEE</div>
-                    <div class="price">20,99 &euro;</div class="price">
-                </div>
-            </div>
+            <!-- &hearts; -->
 
-            <div class="box clearfix">
-                <div class="photo-member3">
-                    <img src="img/3.webp" alt="" class="photo">
-                </div>
-                <div class="member-info">
-                    <div class="brand">Come Zucchero Filato</div>
-                    <div class="type">VOGLIA DI COLORI PASTELLO</div>
-                    <div class="price">129,99 &euro;</div class="price">
-                </div>
-            </div>
 
-            <div class="box clearfix">
-                <div class="photo-member4">
-                    <img src="img/4.webp" alt="" class="photo">
-                </div>
-                <div class="member-info">
-                    <div class="brand">Levi's</div>
-                    <div class="type">TEE UNISEX</div>
-                    <div class="price">14,99 &euro;</div class="price">
-                </div>
-            </div>
 
-            <div class="box clearfix">
-                <div class="photo-member5">
-                    <img src="img/5.webp" alt="" class="photo">
-                </div>
-                <div class="member-info">
-                    <div class="brand">Maya Deluxe</div>
-                    <div class="type">STRIPE BODICE</div>
-                    <div class="price">99,99 &euro;</div class="price">
-                </div>
-            </div>
-
-            <div class="box clearfix">
-                <div class="photo-member6">
-                    <img src="img/6.webp" alt="" class="photo">
-                </div>
-                <div class="member-info">
-                    <div class="brand">Esprit</div>
-                    <div class="type">MAGLIONE - BLACK</div>
-                    <div class="price">29,99 &euro;</div class="price">
-                </div>
-            </div>
-
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
         </div>
-
     </main>
 
-    <footer>
-        <nav class="navbar-bot">
-			<div class="container-navbot">
-				<div class="info-boolean-bot">Boolean s.r.l</div>
-				<div class="small-logo-bot">Trovaci anche su</div>
-			</div>
-		</nav>
-    </footer>
     
 </body>
 </html>
